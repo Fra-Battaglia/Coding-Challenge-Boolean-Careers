@@ -1,0 +1,71 @@
+*{
+	margin: auto;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: url(background.jpg) no-repeat fixed;
+	background-size: cover;
+	color: #FFFFFF;
+}
+p{
+	font-weight: 300;
+}
+
+/* header */
+header{
+	color: #00dd00;
+	text-align: center;
+}
+nav{
+	color: #000000;
+	text-align: center;
+	background-color: #00dd00;
+	padding: 0.5em;
+	margin: 0;
+}
+
+/* blocco monopattini */
+main:first-child{
+	margin-top: 0;
+}
+.box{
+	background: rgba(0, 0, 0, 0.5);
+	padding: 70px;
+	width: 60%;
+	border-radius: 20px;
+	margin-top: 1em;
+}
+.option{
+	margin-top: 1em;
+}
+.scootername::before{
+	content: "Monopattino ";
+}
+.option > h2{
+	display: inline-block;
+}
+.scooterlocation::before{
+	content: '\21A6 ';
+}
+
+/* blocco batteria */
+.scooterlocation::after{
+	content: "Stato carica:";
+}
+.battery{
+	height: 2em;
+	border-radius: 5px;
+	margin: 0;
+}
+.full{
+	background-color: #1ec31e;
+	width: 60%;
+}
+.half{
+	background-color: #f5b453;
+	width: 30%;
+}
+.empty{
+	background-color: #be4141;
+	width: 15.5%;
+}
